@@ -1,12 +1,12 @@
-# AI-Driven Natural Language Filtering in WPF DataGrid for Real-World Scenarios
+# AI-Driven Natural Language Filtering in WPF Data Grid for Real-World Scenarios
 
-This sample demonstrates how to use Azure OpenAI or OpenAI with Microsoft Semantic Kernel to convert natural-language queries into Syncfusion `SfDataGrid` filter predicates. Instead of manually creating filter conditions, users can ask questions in plain English and the app generates the corresponding filter logic automatically.
+This sample demonstrates how to use Azure OpenAI or OpenAI with Microsoft Semantic Kernel to convert natural-language queries into Syncfusion `WPF Data Grid` filter predicates. Instead of manually creating filter conditions, users can ask questions in plain English and the app generates the corresponding filter logic automatically.
 
 ## Overview
 
 The application combines:
 
-- Syncfusion `SfDataGrid` for tabular data display and filtering
+- Syncfusion `WPF Data Grid` for tabular data display and filtering
 - Microsoft Semantic Kernel for chat completion and prompt orchestration
 - Azure OpenAI or OpenAI for understanding natural-language queries
 - Dynamic predicate generation to apply real-time filters to the grid
@@ -15,7 +15,7 @@ This makes data exploration more conversational and user-friendly, especially fo
 
 ## Key Features
 
-- Natural language query-based filtering for WPF DataGrid
+- Natural language query-based filtering for WPF Data Grid
 - AI-generated `FilterPredicate` objects based on the data model schema
 - Support for a range of conditions such as text, date, number, and range-based filters
 - Example queries for quick testing
@@ -84,7 +84,7 @@ The flow is as follows:
 3. Semantic Kernel sends the prompt to Azure OpenAI or OpenAI.
 4. The model returns a JSON payload that describes the filter conditions.
 5. The response is deserialized into one or more `AIFilterPredicate` objects.
-6. Each predicate is validated and applied to the matching column in the `SfDataGrid`.
+6. Each predicate is validated and applied to the matching column in the `WPF Data Grid`.
 7. The grid refreshes and displays only the filtered records.
 
 ## Example Queries
@@ -100,7 +100,7 @@ The sample includes several built-in query suggestions, including:
 
 ## Notes
 
-This sample is intended to demonstrate AI-assisted filtering in a WPF DataGrid. For production use, consider adding:
+This sample is intended to demonstrate AI-assisted filtering in a WPF Data Grid. For production use, consider adding:
 
 - secure handling of API keys and endpoint values
 - validation of AI-generated filter output
